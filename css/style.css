@@ -1,0 +1,89 @@
+/* Globals */
+:root {
+    /* Fonts */
+    --main-font: ;
+    --sub-font: ;
+
+    /* Colors */
+    --green: rgb(0, 192, 0);
+    --black: rgb(44, 42, 42);
+    --white: rgb(243, 240, 240);
+}
+
+/* Apply a natural box layout model to all elements, 
+but allowing components to change */
+*,
+::before, 
+::after {
+    box-sizing: border-box;
+}
+
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fixed header */
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+    width: 100%;
+    
+    font-family: var(--main-font);
+    font-size: 2em;
+    background-color: var(--green);
+}
+
+#navbar > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+
+    /* Flexbox */
+    display: flex;
+}
+
+#navbar > ul li {
+    margin: 0px 20px;
+    padding: 10px 10px;
+}
+
+.Portfolio {
+    flex: 1;
+}
+
+.Portfolio p {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#navbar .link:hover {
+    background-color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
