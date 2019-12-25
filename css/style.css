@@ -195,3 +195,17 @@ main {
     transform: translateY(-10px);
     color: var(--green);
 }
+
+/* Footer */
+footer {
+    background: var(--green);
+    border-top: 4px solid var(--main-red);
+}
+  
+footer p {
+    margin: 0;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+  
