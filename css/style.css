@@ -1,11 +1,11 @@
 /* Globals */
 :root {
     /* Fonts */
-    --main-font: ;
-    --sub-font: ;
+    --main-font: 'Carter One', cursive;
+    --sub-font: 'Merienda One', cursive;
 
     /* Colors */
-    --green: rgb(0, 192, 0);
+    --green: rgb(62, 194, 62);
     --black: rgb(44, 42, 42);
     --white: rgb(243, 240, 240);
 }
@@ -24,6 +24,17 @@ body {
     padding: 0;
 }
 
+/* Fade in Animation */
+html {
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 /* Fixed header */
 header {
     position: fixed;
@@ -31,6 +42,7 @@ header {
     left: 0px;
     
     width: 100%;
+    height: auto;
     
     font-family: var(--main-font);
     font-size: 2em;
@@ -87,6 +99,7 @@ main {
     align-items: center;
     color: var(--green);
     background-color: var(--black);
+    font-family: var(--sub-font);
 }
 
 #welcome-section h1 {
@@ -102,6 +115,7 @@ main {
 #projects {
     padding: 5em 3em;
     background: var(--white);
+    font-family: var(--sub-font);
 }
 
 #projects h1 {
@@ -155,6 +169,7 @@ main {
     text-align: center;
 
     background: var(--black);
+    font-family: var(--sub-font);
 }
 
 #contact-header h1 {
@@ -200,6 +215,7 @@ main {
 footer {
     background: var(--green);
     border-top: 4px solid var(--main-red);
+    font-family: var(--sub-font);
 }
   
 footer p {
@@ -208,4 +224,23 @@ footer p {
     font-size: 1.5em;
     font-weight: bold;
 }
-  
+
+/* Media */
+@media screen and (max-width: 580px) {
+    .links a {
+        flex: 1 1 100%;
+    }
+
+    .contact-details {
+        font-size: 1.75rem;
+    }
+
+    footer p {
+        font-size: 1.2em;
+    }
+
+    #navbar > ul li {
+        flex: 1 1 100%;
+        font-size: 1.5rem;
+    }
+}
