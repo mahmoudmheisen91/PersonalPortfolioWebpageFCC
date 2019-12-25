@@ -98,10 +98,48 @@ main {
     font-size: 2em;
 }
 
+/* Projects Section */
+#projects {
+    padding: 5em 3em;
+    background: var(--white);
+}
 
+#projects h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0 auto 1em auto;;
+}
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-content: space-around;
 
+    grid-gap: 3em;
+    width: 100%;
+    margin: 0 auto 5em auto;
+}
 
+.project-tile {
+    justify-self: center;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.project-tile img {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.project-tile p {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--green);
+}
 
 
 
